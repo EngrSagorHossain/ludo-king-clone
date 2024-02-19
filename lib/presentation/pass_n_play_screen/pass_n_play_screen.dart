@@ -50,7 +50,7 @@ class PassNPlayScreen extends GetWidget<PassNPlayController> {
   Widget _buildPassNPlay() {
     return Container(
         padding: EdgeInsets.symmetric(horizontal: 24.h, vertical: 10.v),
-        decoration: AppDecoration.outlineAmber6001,
+        decoration: AppDecoration.outlinePrimary,
         child: Column(mainAxisSize: MainAxisSize.min, children: [
           Text("lbl_select_game".tr, style: theme.textTheme.titleMedium),
           SizedBox(height: 30.v),
@@ -62,8 +62,8 @@ class PassNPlayScreen extends GetWidget<PassNPlayController> {
                     Container(
                         padding: EdgeInsets.symmetric(
                             horizontal: 14.h, vertical: 2.v),
-                        decoration: AppDecoration.outlineAmber6009.copyWith(
-                            borderRadius: BorderRadiusStyle.roundedBorder10),
+                        decoration: AppDecoration.outlinePrimary11.copyWith(
+                            borderRadius: BorderRadiusStyle.roundedBorder8),
                         child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -85,7 +85,7 @@ class PassNPlayScreen extends GetWidget<PassNPlayController> {
                                             alignment: Alignment.centerLeft,
                                             child: Text("lbl_vs".tr,
                                                 style: CustomTextStyles
-                                                    .labelLargeWhiteA70013)),
+                                                    .labelLargeOnPrimaryContainer13)),
                                         Align(
                                             alignment: Alignment.centerLeft,
                                             child: Padding(
@@ -128,7 +128,7 @@ class PassNPlayScreen extends GetWidget<PassNPlayController> {
                                   margin: EdgeInsets.only(left: 3.h),
                                   padding: EdgeInsets.symmetric(
                                       horizontal: 20.h, vertical: 2.v),
-                                  decoration: AppDecoration.outlineAmber60010
+                                  decoration: AppDecoration.outlinePrimary12
                                       .copyWith(
                                           borderRadius: BorderRadiusStyle
                                               .customBorderTL15),
@@ -159,8 +159,8 @@ class PassNPlayScreen extends GetWidget<PassNPlayController> {
                   children: [
                     Container(
                         padding: EdgeInsets.symmetric(horizontal: 5.h),
-                        decoration: AppDecoration.outlineAmber6009.copyWith(
-                            borderRadius: BorderRadiusStyle.roundedBorder10),
+                        decoration: AppDecoration.outlinePrimary11.copyWith(
+                            borderRadius: BorderRadiusStyle.roundedBorder8),
                         child: Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -182,7 +182,7 @@ class PassNPlayScreen extends GetWidget<PassNPlayController> {
                                             alignment: Alignment.topRight,
                                             child: Text("lbl_vs".tr,
                                                 style: CustomTextStyles
-                                                    .labelLargeWhiteA70013))
+                                                    .labelLargeOnPrimaryContainer13))
                                       ])),
                               CustomImageView(
                                   imagePath: ImageConstant.imgPeople1,
@@ -193,14 +193,13 @@ class PassNPlayScreen extends GetWidget<PassNPlayController> {
                             ])),
                     GestureDetector(
                         onTap: () {
-                          onTapTwentyFive();
+                          onTapTeamUp();
                         },
                         child: Container(
                             margin: EdgeInsets.symmetric(vertical: 13.v),
-                            decoration: AppDecoration.outlineAmber60010
-                                .copyWith(
-                                    borderRadius:
-                                        BorderRadiusStyle.customBorderTL15),
+                            decoration: AppDecoration.outlinePrimary12.copyWith(
+                                borderRadius:
+                                    BorderRadiusStyle.customBorderTL15),
                             child: Row(children: [
                               CustomImageView(
                                   imagePath: ImageConstant.imgCircle41,
@@ -232,7 +231,7 @@ class PassNPlayScreen extends GetWidget<PassNPlayController> {
   }
 
   /// Navigates to the passNPlayFiveScreen when the action is triggered.
-  onTapTwentyFive() {
+  onTapTeamUp() {
     Get.toNamed(
       AppRoutes.passNPlayFiveScreen,
     );

@@ -18,7 +18,7 @@ class PassNPlayFourScreen extends GetWidget<PassNPlayFourController> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      _buildAndroidLarge(),
+                      _buildAndroidLargeColumn(),
                       SizedBox(height: 21.v),
                       Padding(
                           padding: EdgeInsets.only(left: 5.h),
@@ -49,11 +49,11 @@ class PassNPlayFourScreen extends GetWidget<PassNPlayFourController> {
   }
 
   /// Section Widget
-  Widget _buildAndroidLarge() {
+  Widget _buildAndroidLargeColumn() {
     return Container(
         width: 290.h,
         padding: EdgeInsets.symmetric(horizontal: 13.h, vertical: 7.v),
-        decoration: AppDecoration.outlineAmber6001,
+        decoration: AppDecoration.outlinePrimary,
         child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -67,7 +67,7 @@ class PassNPlayFourScreen extends GetWidget<PassNPlayFourController> {
               Padding(
                   padding: EdgeInsets.only(left: 8.h, right: 21.h),
                   child: Row(children: [
-                    _buildMapsAndFlagsTwoEightyEight(
+                    _buildMapsAndFlagsTwoStack(
                         image2: ImageConstant.imgMapsAndFlags2),
                     CustomImageView(
                         imagePath: ImageConstant.imgMapsAndFlags140x40,
@@ -108,8 +108,7 @@ class PassNPlayFourScreen extends GetWidget<PassNPlayFourController> {
                               child: Padding(
                                   padding: EdgeInsets.only(left: 19.h),
                                   child: Text("lbl_player_1".tr,
-                                      style:
-                                          CustomTextStyles.bodySmallGray60001)))
+                                      style: theme.textTheme.bodySmall)))
                         ]))
                   ])),
               SizedBox(height: 12.v),
@@ -129,7 +128,7 @@ class PassNPlayFourScreen extends GetWidget<PassNPlayFourController> {
                             EdgeInsets.only(left: 14.h, top: 5.v, bottom: 5.v)),
                     Padding(
                         padding: EdgeInsets.only(left: 7.h),
-                        child: _buildMapsAndFlagsTwoEightyEight(
+                        child: _buildMapsAndFlagsTwoStack(
                             image2: ImageConstant.imgMapsAndFlags1)),
                     CustomImageView(
                         imagePath: ImageConstant.imgMapsAndFlags3,
@@ -158,8 +157,7 @@ class PassNPlayFourScreen extends GetWidget<PassNPlayFourController> {
                               child: Padding(
                                   padding: EdgeInsets.only(left: 19.h),
                                   child: Text("lbl_player_2".tr,
-                                      style:
-                                          CustomTextStyles.bodySmallGray60001)))
+                                      style: theme.textTheme.bodySmall)))
                         ]))
                   ])),
               SizedBox(height: 8.v),
@@ -175,7 +173,7 @@ class PassNPlayFourScreen extends GetWidget<PassNPlayFourController> {
                             margin: EdgeInsets.only(top: 3.v, bottom: 7.v)),
                         Padding(
                             padding: EdgeInsets.only(left: 9.h),
-                            child: _buildMapsAndFlagsTwoEightyEight(
+                            child: _buildMapsAndFlagsTwoStack(
                                 image2: ImageConstant.imgMapsAndFlags140x40)),
                         CustomImageView(
                             imagePath: ImageConstant.imgMapsAndFlags1,
@@ -196,9 +194,9 @@ class PassNPlayFourScreen extends GetWidget<PassNPlayFourController> {
                             padding: EdgeInsets.symmetric(
                                 horizontal: 19.h, vertical: 1.v),
                             decoration: AppDecoration.fillGray10019.copyWith(
-                                borderRadius: BorderRadiusStyle.roundedBorder7),
+                                borderRadius: BorderRadiusStyle.roundedBorder3),
                             child: Text("lbl_player_3".tr,
-                                style: CustomTextStyles.bodySmallGray60001))
+                                style: theme.textTheme.bodySmall))
                       ])),
               SizedBox(height: 57.v),
               Row(children: [
@@ -206,8 +204,8 @@ class PassNPlayFourScreen extends GetWidget<PassNPlayFourController> {
                     width: 34.h,
                     padding:
                         EdgeInsets.symmetric(horizontal: 8.h, vertical: 1.v),
-                    decoration: AppDecoration.outlineAmber60010.copyWith(
-                        borderRadius: BorderRadiusStyle.roundedBorder7),
+                    decoration: AppDecoration.outlinePrimary12.copyWith(
+                        borderRadius: BorderRadiusStyle.roundedBorder3),
                     child:
                         Text("lbl_2p".tr, style: theme.textTheme.titleSmall)),
                 Container(
@@ -215,8 +213,8 @@ class PassNPlayFourScreen extends GetWidget<PassNPlayFourController> {
                     margin: EdgeInsets.only(left: 23.h),
                     padding:
                         EdgeInsets.symmetric(horizontal: 7.h, vertical: 1.v),
-                    decoration: AppDecoration.outlineBlueGray.copyWith(
-                        borderRadius: BorderRadiusStyle.roundedBorder7),
+                    decoration: AppDecoration.outlinePrimaryContainer.copyWith(
+                        borderRadius: BorderRadiusStyle.roundedBorder3),
                     child:
                         Text("lbl_3p".tr, style: theme.textTheme.titleSmall)),
                 Container(
@@ -224,8 +222,8 @@ class PassNPlayFourScreen extends GetWidget<PassNPlayFourController> {
                     margin: EdgeInsets.only(left: 23.h),
                     padding:
                         EdgeInsets.symmetric(horizontal: 8.h, vertical: 1.v),
-                    decoration: AppDecoration.outlineAmber60010.copyWith(
-                        borderRadius: BorderRadiusStyle.roundedBorder7),
+                    decoration: AppDecoration.outlinePrimary12.copyWith(
+                        borderRadius: BorderRadiusStyle.roundedBorder3),
                     child: Text("lbl_4p".tr, style: theme.textTheme.titleSmall))
               ]),
               SizedBox(height: 3.v)
@@ -233,7 +231,7 @@ class PassNPlayFourScreen extends GetWidget<PassNPlayFourController> {
   }
 
   /// Common widget
-  Widget _buildMapsAndFlagsTwoEightyEight({required String image2}) {
+  Widget _buildMapsAndFlagsTwoStack({required String image2}) {
     return SizedBox(
         height: 30.adaptSize,
         width: 30.adaptSize,

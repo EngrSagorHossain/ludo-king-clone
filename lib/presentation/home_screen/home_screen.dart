@@ -24,8 +24,7 @@ class HomeScreen extends GetWidget<HomeController> {
                           children: [
                             _buildGamingConsoleOne(
                                 userImage: ImageConstant.imgGamingConsole1,
-                                pLAYWITH: "lbl_play".tr,
-                                fRIENDS: "lbl_online".tr,
+                                tOURNAMENTS: "lbl_registration".tr,
                                 onTapGamingConsoleOne: () {
                                   onTapGamingConsoleOne();
                                 }),
@@ -33,8 +32,7 @@ class HomeScreen extends GetWidget<HomeController> {
                                 padding: EdgeInsets.only(left: 34.h),
                                 child: _buildGamingConsoleOne(
                                     userImage: ImageConstant.imgSmartphone21,
-                                    pLAYWITH: "lbl_play_with".tr,
-                                    fRIENDS: "lbl_friends".tr,
+                                    tOURNAMENTS: "lbl_tournaments".tr,
                                     onTapGamingConsoleOne: () {
                                       onTapGamingConsoleOne1();
                                     }))
@@ -47,12 +45,13 @@ class HomeScreen extends GetWidget<HomeController> {
                           children: [
                             GestureDetector(
                                 onTap: () {
-                                  onTapSixtyThree();
+                                  onTapREGISTRATION();
                                 },
                                 child: Container(
                                     padding: EdgeInsets.symmetric(
                                         horizontal: 5.h, vertical: 7.v),
-                                    decoration: AppDecoration.outlineWhiteA
+                                    decoration: AppDecoration
+                                        .outlineOnPrimaryContainer
                                         .copyWith(
                                             borderRadius: BorderRadiusStyle
                                                 .roundedBorder15),
@@ -78,7 +77,7 @@ class HomeScreen extends GetWidget<HomeController> {
                                                                 "lbl_registration"
                                                                     .tr,
                                                                 style: CustomTextStyles
-                                                                    .bodyMediumWhiteA700))),
+                                                                    .bodyMediumRacingSansOne))),
                                                     Align(
                                                         alignment: Alignment
                                                             .center,
@@ -111,18 +110,19 @@ class HomeScreen extends GetWidget<HomeController> {
                                           SizedBox(height: 11.v),
                                           Text("lbl_computer".tr,
                                               style: CustomTextStyles
-                                                  .bodyMediumWhiteA700),
+                                                  .bodyMediumRacingSansOne),
                                           SizedBox(height: 2.v)
                                         ]))),
                             GestureDetector(
                                 onTap: () {
-                                  onTapSixtyOne();
+                                  onTapTOURNAMENT();
                                 },
                                 child: Container(
                                     margin: EdgeInsets.only(left: 34.h),
                                     padding: EdgeInsets.symmetric(
                                         horizontal: 5.h, vertical: 7.v),
-                                    decoration: AppDecoration.outlineWhiteA
+                                    decoration: AppDecoration
+                                        .outlineOnPrimaryContainer
                                         .copyWith(
                                             borderRadius: BorderRadiusStyle
                                                 .roundedBorder15),
@@ -148,7 +148,7 @@ class HomeScreen extends GetWidget<HomeController> {
                                                                 "lbl_tournament"
                                                                     .tr,
                                                                 style: CustomTextStyles
-                                                                    .bodyMediumWhiteA700))),
+                                                                    .bodyMediumRacingSansOne))),
                                                     Align(
                                                         alignment: Alignment
                                                             .center,
@@ -181,7 +181,7 @@ class HomeScreen extends GetWidget<HomeController> {
                                           SizedBox(height: 9.v),
                                           Text("lbl_pass_n_play".tr,
                                               style: CustomTextStyles
-                                                  .bodyMediumWhiteA700),
+                                                  .bodyMediumRacingSansOne),
                                           SizedBox(height: 4.v)
                                         ])))
                           ])),
@@ -195,7 +195,7 @@ class HomeScreen extends GetWidget<HomeController> {
                                 height: 55.v,
                                 width: 60.h,
                                 padding: EdgeInsets.symmetric(vertical: 1.v),
-                                decoration: AppDecoration.outlineAmber600
+                                decoration: AppDecoration.outlinePrimary8
                                     .copyWith(
                                         borderRadius:
                                             BorderRadiusStyle.roundedBorder15),
@@ -223,7 +223,7 @@ class HomeScreen extends GetWidget<HomeController> {
                                               padding: EdgeInsets.symmetric(
                                                   horizontal: 12.h),
                                               decoration: AppDecoration
-                                                  .outlineAmber600
+                                                  .outlinePrimary8
                                                   .copyWith(
                                                       borderRadius:
                                                           BorderRadiusStyle
@@ -257,43 +257,41 @@ class HomeScreen extends GetWidget<HomeController> {
                                                                   .bottomLeft,
                                                               child: Text(
                                                                   "lbl_t".tr,
-                                                                  style: theme
-                                                                      .textTheme
-                                                                      .bodyMedium)),
+                                                                  style: CustomTextStyles
+                                                                      .bodyMediumRacingSansOnePrimary)),
                                                           Align(
                                                               alignment:
                                                                   Alignment
                                                                       .topRight,
                                                               child: Text(
                                                                   "lbl_o".tr,
-                                                                  style: theme
-                                                                      .textTheme
-                                                                      .bodyMedium))
+                                                                  style: CustomTextStyles
+                                                                      .bodyMediumRacingSansOnePrimary))
                                                         ])),
                                                 Padding(
                                                     padding: EdgeInsets.only(
                                                         bottom: 3.v),
                                                     child: Text("lbl_u".tr,
-                                                        style: theme.textTheme
-                                                            .bodyMedium)),
+                                                        style: CustomTextStyles
+                                                            .bodyMediumRacingSansOnePrimary)),
                                                 Padding(
                                                     padding: EdgeInsets.only(
                                                         bottom: 4.v),
                                                     child: Text("lbl_r".tr,
-                                                        style: theme.textTheme
-                                                            .bodyMedium)),
+                                                        style: CustomTextStyles
+                                                            .bodyMediumRacingSansOnePrimary)),
                                                 Padding(
                                                     padding: EdgeInsets.only(
                                                         left: 1.h, bottom: 4.v),
                                                     child: Text("lbl_n".tr,
-                                                        style: theme.textTheme
-                                                            .bodyMedium)),
+                                                        style: CustomTextStyles
+                                                            .bodyMediumRacingSansOnePrimary)),
                                                 Padding(
                                                     padding: EdgeInsets.only(
                                                         bottom: 4.v),
                                                     child: Text("lbl_a".tr,
-                                                        style: theme.textTheme
-                                                            .bodyMedium)),
+                                                        style: CustomTextStyles
+                                                            .bodyMediumRacingSansOnePrimary)),
                                                 Container(
                                                     height: 19.v,
                                                     width: 20.h,
@@ -309,30 +307,28 @@ class HomeScreen extends GetWidget<HomeController> {
                                                                       .topLeft,
                                                               child: Text(
                                                                   "lbl_m".tr,
-                                                                  style: theme
-                                                                      .textTheme
-                                                                      .bodyMedium)),
+                                                                  style: CustomTextStyles
+                                                                      .bodyMediumRacingSansOnePrimary)),
                                                           Align(
                                                               alignment: Alignment
                                                                   .bottomRight,
                                                               child: Text(
                                                                   "lbl_e".tr,
-                                                                  style: theme
-                                                                      .textTheme
-                                                                      .bodyMedium))
+                                                                  style: CustomTextStyles
+                                                                      .bodyMediumRacingSansOnePrimary))
                                                         ])),
                                                 Padding(
                                                     padding: EdgeInsets.only(
                                                         top: 3.v, bottom: 2.v),
                                                     child: Text("lbl_n".tr,
-                                                        style: theme.textTheme
-                                                            .bodyMedium)),
+                                                        style: CustomTextStyles
+                                                            .bodyMediumRacingSansOnePrimary)),
                                                 Padding(
                                                     padding: EdgeInsets.only(
                                                         top: 5.v),
                                                     child: Text("lbl_t".tr,
-                                                        style: theme.textTheme
-                                                            .bodyMedium))
+                                                        style: CustomTextStyles
+                                                            .bodyMediumRacingSansOnePrimary))
                                               ]))
                                     ])),
                             Container(
@@ -340,7 +336,7 @@ class HomeScreen extends GetWidget<HomeController> {
                                 width: 60.h,
                                 margin: EdgeInsets.only(left: 24.h),
                                 padding: EdgeInsets.symmetric(vertical: 1.v),
-                                decoration: AppDecoration.outlineAmber600
+                                decoration: AppDecoration.outlinePrimary8
                                     .copyWith(
                                         borderRadius:
                                             BorderRadiusStyle.roundedBorder15),
@@ -362,7 +358,8 @@ class HomeScreen extends GetWidget<HomeController> {
                                 margin: EdgeInsets.only(left: 12.h),
                                 padding: EdgeInsets.symmetric(
                                     horizontal: 17.h, vertical: 7.v),
-                                decoration: AppDecoration.outlineWhiteA
+                                decoration: AppDecoration
+                                    .outlineOnPrimaryContainer
                                     .copyWith(
                                         borderRadius:
                                             BorderRadiusStyle.roundedBorder15),
@@ -395,7 +392,7 @@ class HomeScreen extends GetWidget<HomeController> {
         padding: EdgeInsets.symmetric(horizontal: 5.h, vertical: 2.v),
         decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage(ImageConstant.imgGroup224),
+                image: AssetImage(ImageConstant.imgGroup991),
                 fit: BoxFit.cover)),
         child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -416,9 +413,10 @@ class HomeScreen extends GetWidget<HomeController> {
                                 height: 35.v,
                                 width: 30.h,
                                 margin: EdgeInsets.only(top: 3.v, right: 2.h),
-                                decoration: AppDecoration.outlineAmber.copyWith(
-                                    borderRadius:
-                                        BorderRadiusStyle.roundedBorder3),
+                                decoration: AppDecoration.outlinePrimary4
+                                    .copyWith(
+                                        borderRadius:
+                                            BorderRadiusStyle.roundedBorder3),
                                 child: CustomImageView(
                                     imagePath: ImageConstant.imgUnnamed2,
                                     height: 33.v,
@@ -448,7 +446,8 @@ class HomeScreen extends GetWidget<HomeController> {
                     Align(
                         alignment: Alignment.bottomCenter,
                         child: Text("lbl_guest8364".tr,
-                            style: CustomTextStyles.robotoWhiteA700)),
+                            style: CustomTextStyles
+                                .robotoOnPrimaryContainerSemiBold)),
                     CustomImageView(
                         imagePath: ImageConstant.imgButton2,
                         height: 5.v,
@@ -484,7 +483,7 @@ class HomeScreen extends GetWidget<HomeController> {
                                       margin: EdgeInsets.only(bottom: 25.v),
                                       padding: EdgeInsets.symmetric(
                                           horizontal: 2.h, vertical: 1.v),
-                                      decoration: AppDecoration.outlineAmber
+                                      decoration: AppDecoration.outlinePrimary4
                                           .copyWith(
                                               borderRadius: BorderRadiusStyle
                                                   .roundedBorder3),
@@ -516,7 +515,7 @@ class HomeScreen extends GetWidget<HomeController> {
                         Align(
                             alignment: Alignment.centerRight,
                             child: Text("lbl_inventory".tr,
-                                style: CustomTextStyles.robotoAmber60001))
+                                style: CustomTextStyles.robotoAmber600))
                       ])))
             ]));
   }
@@ -538,7 +537,7 @@ class HomeScreen extends GetWidget<HomeController> {
                             height: 28.adaptSize,
                             width: 28.adaptSize,
                             padding: EdgeInsets.all(5.h),
-                            decoration: IconButtonStyleHelper.outlineAmber,
+                            decoration: IconButtonStyleHelper.outlinePrimaryTL7,
                             alignment: Alignment.center,
                             onTap: () {
                               onTapBtnIconButton();
@@ -582,7 +581,7 @@ class HomeScreen extends GetWidget<HomeController> {
                         height: 28.adaptSize,
                         width: 28.adaptSize,
                         padding: EdgeInsets.all(4.h),
-                        decoration: IconButtonStyleHelper.outlineAmber,
+                        decoration: IconButtonStyleHelper.outlinePrimaryTL7,
                         child: CustomImageView(
                             imagePath: ImageConstant.imgFrame428x28)),
                     SizedBox(height: 10.v),
@@ -621,13 +620,13 @@ class HomeScreen extends GetWidget<HomeController> {
                             padding: EdgeInsets.only(left: 6.h),
                             child: Text("lbl_free".tr,
                                 style: CustomTextStyles
-                                    .titleLargeRacingSansOneAmber600)))
+                                    .titleLargeRacingSansOnePrimary)))
                   ])),
               Spacer(flex: 53),
               Padding(
                   padding: EdgeInsets.only(top: 68.v),
                   child: Text("lbl_v8_0_0_263".tr,
-                      style: CustomTextStyles.bodySmallWhiteA700)),
+                      style: CustomTextStyles.bodySmallOnPrimaryContainer10)),
               Spacer(flex: 46),
               CustomImageView(
                   imagePath: ImageConstant.imgFortuneWheel1,
@@ -640,8 +639,7 @@ class HomeScreen extends GetWidget<HomeController> {
   /// Common widget
   Widget _buildGamingConsoleOne({
     required String userImage,
-    required String pLAYWITH,
-    required String fRIENDS,
+    required String tOURNAMENTS,
     Function? onTapGamingConsoleOne,
   }) {
     return GestureDetector(
@@ -649,34 +647,28 @@ class HomeScreen extends GetWidget<HomeController> {
           onTapGamingConsoleOne!.call();
         },
         child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 5.h, vertical: 1.v),
-            decoration: AppDecoration.outlineWhiteA
+            padding: EdgeInsets.symmetric(horizontal: 5.h, vertical: 6.v),
+            decoration: AppDecoration.outlineOnPrimaryContainer
                 .copyWith(borderRadius: BorderRadiusStyle.roundedBorder15),
-            child: Column(
-                mainAxisSize: MainAxisSize.min,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  SizedBox(height: 4.v),
-                  Container(
-                      height: 47.v,
-                      width: 110.h,
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 36.h, vertical: 6.v),
-                      decoration: AppDecoration.fillIndigo.copyWith(
-                          borderRadius: BorderRadiusStyle.customBorderTL10),
-                      child: CustomImageView(
-                          imagePath: userImage,
-                          height: 35.adaptSize,
-                          width: 35.adaptSize,
-                          alignment: Alignment.centerRight)),
-                  SizedBox(height: 4.v),
-                  Text(pLAYWITH,
-                      style: CustomTextStyles.bodyMediumWhiteA700
-                          .copyWith(color: appTheme.whiteA700)),
-                  Text(fRIENDS,
-                      style: CustomTextStyles.bodyMediumWhiteA700
-                          .copyWith(color: appTheme.whiteA700))
-                ])));
+            child: Column(mainAxisSize: MainAxisSize.min, children: [
+              Container(
+                  height: 47.v,
+                  width: 110.h,
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 36.h, vertical: 6.v),
+                  decoration: AppDecoration.fillIndigo.copyWith(
+                      borderRadius: BorderRadiusStyle.customBorderTL10),
+                  child: CustomImageView(
+                      imagePath: userImage,
+                      height: 35.adaptSize,
+                      width: 35.adaptSize,
+                      alignment: Alignment.centerRight)),
+              SizedBox(height: 10.v),
+              Text(tOURNAMENTS,
+                  style: CustomTextStyles.bodyMediumRacingSansOne
+                      .copyWith(color: theme.colorScheme.onPrimaryContainer)),
+              SizedBox(height: 5.v)
+            ])));
   }
 
   /// Navigates to the profileScreen when the action is triggered.
@@ -700,29 +692,23 @@ class HomeScreen extends GetWidget<HomeController> {
     );
   }
 
-  /// Navigates to the playOnlineScreen when the action is triggered.
   onTapGamingConsoleOne() {
-    Get.toNamed(
-      AppRoutes.playOnlineScreen,
-    );
+    // TODO: implement Actions
   }
 
-  /// Navigates to the playWithFriendsScreen when the action is triggered.
   onTapGamingConsoleOne1() {
-    Get.toNamed(
-      AppRoutes.playWithFriendsScreen,
-    );
+    // TODO: implement Actions
   }
 
   /// Navigates to the computerScreen when the action is triggered.
-  onTapSixtyThree() {
+  onTapREGISTRATION() {
     Get.toNamed(
       AppRoutes.computerScreen,
     );
   }
 
   /// Navigates to the passNPlayScreen when the action is triggered.
-  onTapSixtyOne() {
+  onTapTOURNAMENT() {
     Get.toNamed(
       AppRoutes.passNPlayScreen,
     );

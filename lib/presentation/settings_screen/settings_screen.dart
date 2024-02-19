@@ -31,7 +31,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                             horizontal: 15.h,
                             vertical: 5.v,
                           ),
-                          decoration: AppDecoration.outlineAmber6001,
+                          decoration: AppDecoration.outlinePrimary,
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
@@ -42,7 +42,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                   vertical: 1.v,
                                 ),
                                 decoration:
-                                    AppDecoration.outlineAmber6002.copyWith(
+                                    AppDecoration.outlinePrimary1.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.roundedBorder3,
                                 ),
@@ -52,7 +52,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                 ),
                               ),
                               SizedBox(height: 14.v),
-                              _buildDeleteAccountRow(
+                              _buildRequestAccountRow(
                                 requestText: "msg_get_your_profile".tr,
                                 deleteText: "lbl_get_verified".tr,
                               ),
@@ -63,7 +63,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                   vertical: 5.v,
                                 ),
                                 decoration:
-                                    AppDecoration.outlineAmber6003.copyWith(
+                                    AppDecoration.outlinePrimary2.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.roundedBorder3,
                                 ),
@@ -84,10 +84,10 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                       width: 30.h,
                                       padding:
                                           EdgeInsets.symmetric(horizontal: 5.h),
-                                      decoration: AppDecoration.outlineAmber6004
+                                      decoration: AppDecoration.outlinePrimary3
                                           .copyWith(
                                         borderRadius:
-                                            BorderRadiusStyle.roundedBorder7,
+                                            BorderRadiusStyle.roundedBorder8,
                                       ),
                                       child: CustomImageView(
                                         imagePath: ImageConstant.imgVolume2,
@@ -106,7 +106,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                   vertical: 4.v,
                                 ),
                                 decoration:
-                                    AppDecoration.outlineAmber6003.copyWith(
+                                    AppDecoration.outlinePrimary2.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.roundedBorder3,
                                 ),
@@ -137,7 +137,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                   vertical: 5.v,
                                 ),
                                 decoration:
-                                    AppDecoration.outlineAmber6003.copyWith(
+                                    AppDecoration.outlinePrimary2.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.roundedBorder3,
                                 ),
@@ -161,10 +161,10 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                         horizontal: 4.h,
                                         vertical: 1.v,
                                       ),
-                                      decoration: AppDecoration.outlineAmber6004
+                                      decoration: AppDecoration.outlinePrimary3
                                           .copyWith(
                                         borderRadius:
-                                            BorderRadiusStyle.roundedBorder7,
+                                            BorderRadiusStyle.roundedBorder8,
                                       ),
                                       child: Row(
                                         mainAxisAlignment:
@@ -201,7 +201,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                   vertical: 5.v,
                                 ),
                                 decoration:
-                                    AppDecoration.outlineAmber6003.copyWith(
+                                    AppDecoration.outlinePrimary2.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.roundedBorder3,
                                 ),
@@ -231,7 +231,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                   vertical: 5.v,
                                 ),
                                 decoration:
-                                    AppDecoration.outlineAmber6003.copyWith(
+                                    AppDecoration.outlinePrimary2.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.roundedBorder3,
                                 ),
@@ -261,7 +261,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                   vertical: 5.v,
                                 ),
                                 decoration:
-                                    AppDecoration.outlineAmber6003.copyWith(
+                                    AppDecoration.outlinePrimary2.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.roundedBorder3,
                                 ),
@@ -289,7 +289,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                   vertical: 2.v,
                                 ),
                                 decoration:
-                                    AppDecoration.outlineAmber6003.copyWith(
+                                    AppDecoration.outlinePrimary2.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.roundedBorder3,
                                 ),
@@ -320,10 +320,10 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                                 vertical: 2.v,
                                               ),
                                               decoration: AppDecoration
-                                                  .outlineAmber6004
+                                                  .outlinePrimary3
                                                   .copyWith(
                                                 borderRadius: BorderRadiusStyle
-                                                    .roundedBorder7,
+                                                    .roundedBorder8,
                                               ),
                                               child: Text(
                                                 "lbl_tutorial".tr,
@@ -353,7 +353,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                   vertical: 5.v,
                                 ),
                                 decoration:
-                                    AppDecoration.outlineAmber6003.copyWith(
+                                    AppDecoration.outlinePrimary2.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.roundedBorder3,
                                 ),
@@ -371,7 +371,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                         style: theme.textTheme.labelLarge,
                                       ),
                                     ),
-                                    _buildPrivacyPolicyButton(),
+                                    _buildViewButton1(),
                                   ],
                                 ),
                               ),
@@ -382,7 +382,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                   vertical: 5.v,
                                 ),
                                 decoration:
-                                    AppDecoration.outlineAmber6003.copyWith(
+                                    AppDecoration.outlinePrimary2.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.roundedBorder3,
                                 ),
@@ -402,10 +402,10 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                       width: 30.h,
                                       padding:
                                           EdgeInsets.symmetric(horizontal: 7.h),
-                                      decoration: AppDecoration.outlineAmber6004
+                                      decoration: AppDecoration.outlinePrimary3
                                           .copyWith(
                                         borderRadius:
-                                            BorderRadiusStyle.roundedBorder7,
+                                            BorderRadiusStyle.roundedBorder8,
                                       ),
                                       child: CustomImageView(
                                         imagePath: ImageConstant.imgGamepad1,
@@ -422,10 +422,10 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                         horizontal: 7.h,
                                         vertical: 2.v,
                                       ),
-                                      decoration: AppDecoration.outlineAmber6004
+                                      decoration: AppDecoration.outlinePrimary3
                                           .copyWith(
                                         borderRadius:
-                                            BorderRadiusStyle.roundedBorder7,
+                                            BorderRadiusStyle.roundedBorder8,
                                       ),
                                       child: CustomImageView(
                                         imagePath: ImageConstant.imgWinner2,
@@ -444,7 +444,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                   vertical: 5.v,
                                 ),
                                 decoration:
-                                    AppDecoration.outlineAmber6003.copyWith(
+                                    AppDecoration.outlinePrimary2.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.roundedBorder3,
                                 ),
@@ -460,7 +460,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                         style: theme.textTheme.labelLarge,
                                       ),
                                     ),
-                                    _buildAchievementsButton(),
+                                    _buildViewButton2(),
                                   ],
                                 ),
                               ),
@@ -471,7 +471,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                   vertical: 5.v,
                                 ),
                                 decoration:
-                                    AppDecoration.outlineAmber6003.copyWith(
+                                    AppDecoration.outlinePrimary2.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.roundedBorder3,
                                 ),
@@ -500,7 +500,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                   vertical: 5.v,
                                 ),
                                 decoration:
-                                    AppDecoration.outlineAmber6003.copyWith(
+                                    AppDecoration.outlinePrimary2.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.roundedBorder3,
                                 ),
@@ -521,12 +521,12 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                 ),
                               ),
                               SizedBox(height: 8.v),
-                              _buildDeleteAccountRow(
+                              _buildRequestAccountRow(
                                 requestText: "msg_request_account".tr,
                                 deleteText: "lbl_delete_account".tr,
                               ),
                               SizedBox(height: 6.v),
-                              _buildDeleteAccountRow(
+                              _buildRequestAccountRow(
                                 requestText: "lbl_version".tr,
                                 deleteText: "lbl_8_0_0_263".tr,
                               ),
@@ -537,7 +537,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
                                   vertical: 1.v,
                                 ),
                                 decoration:
-                                    AppDecoration.outlineAmber6003.copyWith(
+                                    AppDecoration.outlinePrimary2.copyWith(
                                   borderRadius:
                                       BorderRadiusStyle.roundedBorder3,
                                 ),
@@ -672,7 +672,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
   }
 
   /// Section Widget
-  Widget _buildPrivacyPolicyButton() {
+  Widget _buildViewButton1() {
     return CustomOutlinedButton(
       width: 52.h,
       text: "lbl_view".tr,
@@ -680,7 +680,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
   }
 
   /// Section Widget
-  Widget _buildAchievementsButton() {
+  Widget _buildViewButton2() {
     return CustomOutlinedButton(
       width: 52.h,
       text: "lbl_view".tr,
@@ -722,7 +722,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
   }
 
   /// Common widget
-  Widget _buildDeleteAccountRow({
+  Widget _buildRequestAccountRow({
     required String requestText,
     required String deleteText,
   }) {
@@ -731,7 +731,7 @@ class SettingsScreen extends GetWidget<SettingsController> {
         horizontal: 8.h,
         vertical: 5.v,
       ),
-      decoration: AppDecoration.outlineAmber6003.copyWith(
+      decoration: AppDecoration.outlinePrimary2.copyWith(
         borderRadius: BorderRadiusStyle.roundedBorder3,
       ),
       child: Row(
@@ -752,8 +752,8 @@ class SettingsScreen extends GetWidget<SettingsController> {
           Container(
             width: 52.h,
             padding: EdgeInsets.all(5.h),
-            decoration: AppDecoration.outlineAmber6004.copyWith(
-              borderRadius: BorderRadiusStyle.roundedBorder7,
+            decoration: AppDecoration.outlinePrimary3.copyWith(
+              borderRadius: BorderRadiusStyle.roundedBorder8,
             ),
             child: Text(
               deleteText,

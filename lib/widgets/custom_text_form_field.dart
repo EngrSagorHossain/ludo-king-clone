@@ -92,7 +92,7 @@ class CustomTextFormField extends StatelessWidget {
           controller: controller,
           focusNode: focusNode ?? FocusNode(),
           autofocus: autofocus!,
-          style: textStyle ?? CustomTextStyles.titleSmallYellow700_1,
+          style: textStyle ?? theme.textTheme.bodySmall,
           obscureText: obscureText!,
           textInputAction: textInputAction,
           keyboardType: textInputType,
@@ -109,32 +109,41 @@ class CustomTextFormField extends StatelessWidget {
         suffixIcon: suffix,
         suffixIconConstraints: suffixConstraints,
         isDense: true,
-        contentPadding: contentPadding ?? EdgeInsets.all(4.h),
-        fillColor: fillColor ?? appTheme.indigo90003,
+        contentPadding: contentPadding ?? EdgeInsets.all(7.h),
+        fillColor: fillColor ?? appTheme.gray10019,
         filled: filled,
         border: borderDecoration ??
             OutlineInputBorder(
-              borderRadius: BorderRadius.circular(3.h),
-              borderSide: BorderSide(
-                color: appTheme.amber600,
-                width: 1,
-              ),
+              borderRadius: BorderRadius.circular(5.h),
+              borderSide: BorderSide.none,
             ),
         enabledBorder: borderDecoration ??
             OutlineInputBorder(
-              borderRadius: BorderRadius.circular(3.h),
-              borderSide: BorderSide(
-                color: appTheme.amber600,
-                width: 1,
-              ),
+              borderRadius: BorderRadius.circular(5.h),
+              borderSide: BorderSide.none,
             ),
         focusedBorder: borderDecoration ??
             OutlineInputBorder(
-              borderRadius: BorderRadius.circular(3.h),
-              borderSide: BorderSide(
-                color: appTheme.amber600,
-                width: 1,
-              ),
+              borderRadius: BorderRadius.circular(5.h),
+              borderSide: BorderSide.none,
             ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(3.h),
+          borderSide: BorderSide(
+            color: theme.colorScheme.primary,
+            width: 1,
+          ),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(3.h),
+          borderSide: BorderSide(
+            color: theme.colorScheme.primary,
+            width: 1,
+          ),
+        ),
+        errorStyle: TextStyle(
+          color: theme.colorScheme.primary,
+          fontSize: 12.fSize,
+        ),
       );
 }

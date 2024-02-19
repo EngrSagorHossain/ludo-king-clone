@@ -21,7 +21,7 @@ class ExitScreen extends GetWidget<ExitController> {
   Widget _buildAndroidLarge() {
     return Container(
         padding: EdgeInsets.symmetric(horizontal: 40.h, vertical: 8.v),
-        decoration: AppDecoration.outlineAmber6001,
+        decoration: AppDecoration.outlinePrimary,
         child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.end,

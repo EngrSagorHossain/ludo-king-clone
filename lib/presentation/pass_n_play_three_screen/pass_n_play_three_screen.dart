@@ -56,7 +56,7 @@ class PassNPlayThreeScreen extends GetWidget<PassNPlayThreeController> {
     return Container(
         width: 290.h,
         padding: EdgeInsets.symmetric(horizontal: 13.h, vertical: 7.v),
-        decoration: AppDecoration.outlineAmber6001,
+        decoration: AppDecoration.outlinePrimary,
         child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -96,8 +96,8 @@ class PassNPlayThreeScreen extends GetWidget<PassNPlayThreeController> {
                     width: 34.h,
                     padding:
                         EdgeInsets.symmetric(horizontal: 8.h, vertical: 1.v),
-                    decoration: AppDecoration.outlineAmber60010.copyWith(
-                        borderRadius: BorderRadiusStyle.roundedBorder7),
+                    decoration: AppDecoration.outlinePrimary12.copyWith(
+                        borderRadius: BorderRadiusStyle.roundedBorder3),
                     child:
                         Text("lbl_2p".tr, style: theme.textTheme.titleSmall)),
                 Container(
@@ -105,8 +105,8 @@ class PassNPlayThreeScreen extends GetWidget<PassNPlayThreeController> {
                     margin: EdgeInsets.only(left: 23.h),
                     padding:
                         EdgeInsets.symmetric(horizontal: 6.h, vertical: 1.v),
-                    decoration: AppDecoration.outlineAmber60010.copyWith(
-                        borderRadius: BorderRadiusStyle.roundedBorder7),
+                    decoration: AppDecoration.outlinePrimary12.copyWith(
+                        borderRadius: BorderRadiusStyle.roundedBorder3),
                     child:
                         Text("lbl_3p".tr, style: theme.textTheme.titleSmall)),
                 Container(
@@ -114,8 +114,8 @@ class PassNPlayThreeScreen extends GetWidget<PassNPlayThreeController> {
                     margin: EdgeInsets.only(left: 21.h),
                     padding:
                         EdgeInsets.symmetric(horizontal: 8.h, vertical: 1.v),
-                    decoration: AppDecoration.outlineBlueGray.copyWith(
-                        borderRadius: BorderRadiusStyle.roundedBorder7),
+                    decoration: AppDecoration.outlinePrimaryContainer.copyWith(
+                        borderRadius: BorderRadiusStyle.roundedBorder3),
                     child: Text("lbl_4p".tr, style: theme.textTheme.titleSmall))
               ]),
               SizedBox(height: 3.v)
@@ -134,10 +134,10 @@ class PassNPlayThreeScreen extends GetWidget<PassNPlayThreeController> {
           width: 87.h,
           margin: EdgeInsets.only(left: 12.h),
           padding: EdgeInsets.symmetric(horizontal: 10.h, vertical: 1.v),
-          decoration: AppDecoration.fillWhiteA
-              .copyWith(borderRadius: BorderRadiusStyle.roundedBorder7),
+          decoration: AppDecoration.fillOnPrimaryContainer
+              .copyWith(borderRadius: BorderRadiusStyle.roundedBorder3),
           child: Text(playerCounter,
-              style: theme.textTheme.bodySmall!
+              style: CustomTextStyles.bodySmallBlack900
                   .copyWith(color: appTheme.black900)))
     ]);
   }

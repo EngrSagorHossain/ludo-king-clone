@@ -40,7 +40,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                         horizontal: 20.h,
                         vertical: 2.v,
                       ),
-                      decoration: AppDecoration.outlineAmber6004.copyWith(
+                      decoration: AppDecoration.outlinePrimary3.copyWith(
                         borderRadius: BorderRadiusStyle.roundedBorder3,
                       ),
                       child: Text(
@@ -64,7 +64,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                   horizontal: 16.h,
                                   vertical: 6.v,
                                 ),
-                                decoration: AppDecoration.outlineAmber6001,
+                                decoration: AppDecoration.outlinePrimary,
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
@@ -80,7 +80,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                         decoration:
                                             AppDecoration.outlineGray.copyWith(
                                           borderRadius:
-                                              BorderRadiusStyle.roundedBorder7,
+                                              BorderRadiusStyle.roundedBorder8,
                                         ),
                                         child: Text(
                                           "lbl_guest8364".tr,
@@ -97,7 +97,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                         child: Text(
                                           "msg_645457eregfeghfhehefg33".tr,
                                           style: CustomTextStyles
-                                              .bodySmallWhiteA700,
+                                              .bodySmallOnPrimaryContainer10,
                                         ),
                                       ),
                                     ),
@@ -117,7 +117,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                             height: 60.adaptSize,
                                             width: 60.adaptSize,
                                             decoration: AppDecoration
-                                                .outlineAmber
+                                                .outlinePrimary4
                                                 .copyWith(
                                               borderRadius: BorderRadiusStyle
                                                   .roundedBorder3,
@@ -171,9 +171,10 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                                           horizontal: 7.h,
                                                           vertical: 1.v,
                                                         ),
-                                                        decoration: AppDecoration
-                                                            .outlineAmber6005
-                                                            .copyWith(
+                                                        decoration:
+                                                            AppDecoration
+                                                                .outlinePrimary5
+                                                                .copyWith(
                                                           borderRadius:
                                                               BorderRadiusStyle
                                                                   .roundedBorder3,
@@ -201,7 +202,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                                               child: Text(
                                                                 "lbl_44502".tr,
                                                                 style: CustomTextStyles
-                                                                    .labelLargeWhiteA700,
+                                                                    .labelLargeOnPrimaryContainerMedium,
                                                               ),
                                                             ),
                                                           ],
@@ -223,7 +224,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                                       vertical: 1.v,
                                                     ),
                                                     decoration: AppDecoration
-                                                        .outlineAmber6005
+                                                        .outlinePrimary5
                                                         .copyWith(
                                                       borderRadius:
                                                           BorderRadiusStyle
@@ -254,7 +255,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                                           child: Text(
                                                             "lbl_503".tr,
                                                             style: CustomTextStyles
-                                                                .labelLargeWhiteA700,
+                                                                .labelLargeOnPrimaryContainerMedium,
                                                           ),
                                                         ),
                                                       ],
@@ -303,7 +304,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                                   child: Text(
                                                     "lbl_0".tr,
                                                     style: CustomTextStyles
-                                                        .labelLargeWhiteA700,
+                                                        .labelLargeOnPrimaryContainerMedium,
                                                   ),
                                                 ),
                                               ],
@@ -325,7 +326,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                                       bottom: 3.v,
                                                     ),
                                                     decoration: AppDecoration
-                                                        .outlineAmber6006
+                                                        .outlinePrimary6
                                                         .copyWith(
                                                       borderRadius:
                                                           BorderRadiusStyle
@@ -349,7 +350,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                                           child: Text(
                                                             "lbl_1_20".tr,
                                                             style: CustomTextStyles
-                                                                .labelSmallWhiteA700Medium8,
+                                                                .labelSmallOnPrimaryContainerMedium8,
                                                           ),
                                                         ),
                                                       ],
@@ -413,7 +414,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                               child: Text(
                                                 "msg_performance_rating".tr,
                                                 style: CustomTextStyles
-                                                    .labelSmallWhiteA700Medium,
+                                                    .labelSmallOnPrimaryContainerMedium,
                                               ),
                                             ),
                                             Padding(
@@ -439,7 +440,8 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                       ),
                                       padding: EdgeInsets.symmetric(
                                           horizontal: 81.h),
-                                      decoration: AppDecoration.fillIndigo90001
+                                      decoration: AppDecoration
+                                          .fillOnErrorContainer
                                           .copyWith(
                                         borderRadius:
                                             BorderRadiusStyle.roundedBorder3,
@@ -479,7 +481,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                         horizontal: 30.h,
                                         vertical: 3.v,
                                       ),
-                                      decoration: AppDecoration.outlineAmber6003
+                                      decoration: AppDecoration.outlinePrimary2
                                           .copyWith(
                                         borderRadius:
                                             BorderRadiusStyle.roundedBorder3,
@@ -506,7 +508,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                               margin:
                                                   EdgeInsets.only(right: 53.h),
                                               decoration: BoxDecoration(
-                                                color: appTheme.gray90001,
+                                                color: appTheme.gray90002,
                                               ),
                                             ),
                                           ),
@@ -518,7 +520,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                               child: Text(
                                                 "lbl_01".tr,
                                                 style: CustomTextStyles
-                                                    .robotoWhiteA700SemiBold,
+                                                    .robotoOnPrimaryContainer,
                                               ),
                                             ),
                                           ),
@@ -527,7 +529,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                             child: Text(
                                               "lbl_00".tr,
                                               style: CustomTextStyles
-                                                  .robotoWhiteA700SemiBold,
+                                                  .robotoOnPrimaryContainer,
                                             ),
                                           ),
                                           Align(
@@ -538,7 +540,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                               child: Text(
                                                 "lbl_02".tr,
                                                 style: CustomTextStyles
-                                                    .robotoWhiteA700SemiBold,
+                                                    .robotoOnPrimaryContainer,
                                               ),
                                             ),
                                           ),
@@ -550,7 +552,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                               child: Text(
                                                 "lbl_00".tr,
                                                 style: CustomTextStyles
-                                                    .robotoWhiteA700SemiBold,
+                                                    .robotoOnPrimaryContainer,
                                               ),
                                             ),
                                           ),
@@ -562,7 +564,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                                               child: Text(
                                                 "lbl_00".tr,
                                                 style: CustomTextStyles
-                                                    .robotoWhiteA700SemiBold,
+                                                    .robotoOnPrimaryContainer,
                                               ),
                                             ),
                                           ),
@@ -610,7 +612,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
                       ),
                     ),
                     SizedBox(height: 8.v),
-                    _buildEighty(),
+                    _buildGoogle1(),
                     SizedBox(height: 5.v),
                     _buildShare(),
                     SizedBox(height: 5.v),
@@ -640,6 +642,10 @@ class ProfileScreen extends GetWidget<ProfileController> {
           }
           return null;
         },
+        contentPadding: EdgeInsets.symmetric(
+          horizontal: 30.h,
+          vertical: 4.v,
+        ),
       ),
     );
   }
@@ -679,7 +685,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
             width: 15.adaptSize,
           ),
         ),
-        buttonStyle: CustomButtonStyles.outlineGray,
+        buttonStyle: CustomButtonStyles.outlineGray2,
         buttonTextStyle: CustomTextStyles.labelSmallGray600,
       ),
     );
@@ -700,14 +706,14 @@ class ProfileScreen extends GetWidget<ProfileController> {
             width: 15.adaptSize,
           ),
         ),
-        buttonStyle: CustomButtonStyles.outlineGray,
+        buttonStyle: CustomButtonStyles.outlineGray2,
         buttonTextStyle: CustomTextStyles.labelSmallGray600,
       ),
     );
   }
 
   /// Section Widget
-  Widget _buildEighty() {
+  Widget _buildGoogle1() {
     return Container(
       margin: EdgeInsets.only(
         left: 30.h,
@@ -717,8 +723,8 @@ class ProfileScreen extends GetWidget<ProfileController> {
         horizontal: 38.h,
         vertical: 3.v,
       ),
-      decoration: AppDecoration.outlineAmber6007.copyWith(
-        borderRadius: BorderRadiusStyle.roundedBorder10,
+      decoration: AppDecoration.outlinePrimary7.copyWith(
+        borderRadius: BorderRadiusStyle.roundedBorder8,
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -759,7 +765,7 @@ class ProfileScreen extends GetWidget<ProfileController> {
           SizedBox(height: 2.v),
           Text(
             "lbl_sign_in_with".tr,
-            style: CustomTextStyles.labelSmallWhiteA700,
+            style: CustomTextStyles.labelSmallOnPrimaryContainer,
           ),
           SizedBox(height: 1.v),
           Padding(

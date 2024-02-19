@@ -28,9 +28,9 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                     child: Column(
                       children: [
                         _buildScreenTitle(
-                          screenTitle: "Home".tr,
+                          screenTitle: "Splash".tr,
                           onTapScreenTitle: () =>
-                              onTapScreenTitle(AppRoutes.homeScreen),
+                              onTapScreenTitle(AppRoutes.splashScreen),
                         ),
                         _buildScreenTitle(
                           screenTitle: "Settings".tr,
@@ -46,6 +46,11 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                           screenTitle: "EXIT Two".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.exitTwoScreen),
+                        ),
+                        _buildScreenTitle(
+                          screenTitle: "Home".tr,
+                          onTapScreenTitle: () =>
+                              onTapScreenTitle(AppRoutes.homeScreen),
                         ),
                         _buildScreenTitle(
                           screenTitle: "Computer".tr,
@@ -68,34 +73,24 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                               onTapScreenTitle(AppRoutes.exitOneScreen),
                         ),
                         _buildScreenTitle(
-                          screenTitle: "play online".tr,
-                          onTapScreenTitle: () =>
-                              onTapScreenTitle(AppRoutes.playOnlineScreen),
-                        ),
-                        _buildScreenTitle(
-                          screenTitle: "play online Two".tr,
-                          onTapScreenTitle: () =>
-                              onTapScreenTitle(AppRoutes.playOnlineTwoScreen),
-                        ),
-                        _buildScreenTitle(
-                          screenTitle: "Tournament  game".tr,
-                          onTapScreenTitle: () =>
-                              onTapScreenTitle(AppRoutes.tournamentGameScreen),
-                        ),
-                        _buildScreenTitle(
-                          screenTitle: "EXIT Three".tr,
-                          onTapScreenTitle: () =>
-                              onTapScreenTitle(AppRoutes.exitThreeScreen),
-                        ),
-                        _buildScreenTitle(
-                          screenTitle: "play with friends".tr,
-                          onTapScreenTitle: () =>
-                              onTapScreenTitle(AppRoutes.playWithFriendsScreen),
-                        ),
-                        _buildScreenTitle(
-                          screenTitle: "play with friends Two".tr,
+                          screenTitle: "Payments or Registration".tr,
                           onTapScreenTitle: () => onTapScreenTitle(
-                              AppRoutes.playWithFriendsTwoScreen),
+                              AppRoutes.paymentsOrRegistrationScreen),
+                        ),
+                        _buildScreenTitle(
+                          screenTitle: "Payment method".tr,
+                          onTapScreenTitle: () =>
+                              onTapScreenTitle(AppRoutes.paymentMethodScreen),
+                        ),
+                        _buildScreenTitle(
+                          screenTitle: "Registration submit ".tr,
+                          onTapScreenTitle: () => onTapScreenTitle(
+                              AppRoutes.registrationSubmitScreen),
+                        ),
+                        _buildScreenTitle(
+                          screenTitle: "Registration submit Two".tr,
+                          onTapScreenTitle: () => onTapScreenTitle(
+                              AppRoutes.registrationSubmitTwoScreen),
                         ),
                         _buildScreenTitle(
                           screenTitle: "Pass n play".tr,
@@ -131,6 +126,51 @@ class AppNavigationScreen extends GetWidget<AppNavigationController> {
                           screenTitle: "EXIT".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.exitScreen),
+                        ),
+                        _buildScreenTitle(
+                          screenTitle: "Tournament".tr,
+                          onTapScreenTitle: () =>
+                              onTapScreenTitle(AppRoutes.tournamentScreen),
+                        ),
+                        _buildScreenTitle(
+                          screenTitle: "Tournament Two".tr,
+                          onTapScreenTitle: () =>
+                              onTapScreenTitle(AppRoutes.tournamentTwoScreen),
+                        ),
+                        _buildScreenTitle(
+                          screenTitle: "Tournament Three".tr,
+                          onTapScreenTitle: () =>
+                              onTapScreenTitle(AppRoutes.tournamentThreeScreen),
+                        ),
+                        _buildScreenTitle(
+                          screenTitle: "Tournament Four".tr,
+                          onTapScreenTitle: () =>
+                              onTapScreenTitle(AppRoutes.tournamentFourScreen),
+                        ),
+                        _buildScreenTitle(
+                          screenTitle: "Tournament Five".tr,
+                          onTapScreenTitle: () =>
+                              onTapScreenTitle(AppRoutes.tournamentFiveScreen),
+                        ),
+                        _buildScreenTitle(
+                          screenTitle: "Tournament Six".tr,
+                          onTapScreenTitle: () =>
+                              onTapScreenTitle(AppRoutes.tournamentSixScreen),
+                        ),
+                        _buildScreenTitle(
+                          screenTitle: "Tournament  game".tr,
+                          onTapScreenTitle: () =>
+                              onTapScreenTitle(AppRoutes.tournamentGameScreen),
+                        ),
+                        _buildScreenTitle(
+                          screenTitle: "EXIT".tr,
+                          onTapScreenTitle: () =>
+                              onTapScreenTitle(AppRoutes.exit1Screen),
+                        ),
+                        _buildScreenTitle(
+                          screenTitle: "Tournament  Result".tr,
+                          onTapScreenTitle: () => onTapScreenTitle(
+                              AppRoutes.tournamentResultScreen),
                         ),
                       ],
                     ),

@@ -15,33 +15,63 @@ class AppDecoration {
   static BoxDecoration get fillIndigo => BoxDecoration(
         color: appTheme.indigo900,
       );
-  static BoxDecoration get fillIndigo90001 => BoxDecoration(
-        color: appTheme.indigo90001,
+  static BoxDecoration get fillLightBlue => BoxDecoration(
+        color: appTheme.lightBlue800,
+      );
+  static BoxDecoration get fillOnErrorContainer => BoxDecoration(
+        color: theme.colorScheme.onErrorContainer,
+      );
+  static BoxDecoration get fillOnPrimaryContainer => BoxDecoration(
+        color: theme.colorScheme.onPrimaryContainer,
       );
   static BoxDecoration get fillTeal => BoxDecoration(
         color: appTheme.teal200,
       );
-  static BoxDecoration get fillWhiteA => BoxDecoration(
-        color: appTheme.whiteA700,
-      );
 
   // Outline decorations
-  static BoxDecoration get outlineAmber => BoxDecoration(
+  static BoxDecoration get outlineBlack => BoxDecoration(
+        color: theme.colorScheme.onPrimaryContainer,
         border: Border.all(
-          color: appTheme.amber600,
+          color: appTheme.black900.withOpacity(0.2),
           width: 1.h,
         ),
       );
-  static BoxDecoration get outlineAmber600 => BoxDecoration(
+  static BoxDecoration get outlineGray => BoxDecoration(
+        color: theme.colorScheme.onPrimaryContainer,
         border: Border.all(
-          color: appTheme.amber600,
-          width: 2.h,
+          color: appTheme.gray90004,
+          width: 1.h,
         ),
       );
-  static BoxDecoration get outlineAmber6001 => BoxDecoration(
+  static BoxDecoration get outlineGray800 => BoxDecoration(
+        color: appTheme.blue800,
+        border: Border.all(
+          color: appTheme.gray800,
+          width: 1.h,
+        ),
+      );
+  static BoxDecoration get outlineOnPrimaryContainer => BoxDecoration(
+        color: theme.colorScheme.primary,
+        border: Border.all(
+          color: theme.colorScheme.onPrimaryContainer,
+          width: 1.h,
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: appTheme.lime900E501,
+            spreadRadius: 2.h,
+            blurRadius: 2.h,
+            offset: Offset(
+              2,
+              2,
+            ),
+          ),
+        ],
+      );
+  static BoxDecoration get outlinePrimary => BoxDecoration(
         color: appTheme.indigo900,
         border: Border.all(
-          color: appTheme.amber600,
+          color: theme.colorScheme.primary,
           width: 3.h,
         ),
         boxShadow: [
@@ -56,112 +86,92 @@ class AppDecoration {
           ),
         ],
       );
-  static BoxDecoration get outlineAmber60010 => BoxDecoration(
+  static BoxDecoration get outlinePrimaryContainer => BoxDecoration(
+        border: Border.all(
+          color: theme.colorScheme.primaryContainer,
+          width: 1.h,
+        ),
+      );
+  static BoxDecoration get outlinePrimary1 => BoxDecoration(
+        color: appTheme.indigo90002,
+        border: Border.all(
+          color: theme.colorScheme.primary,
+          width: 2.h,
+        ),
+      );
+  static BoxDecoration get outlinePrimary10 => BoxDecoration(
+        color: appTheme.indigo900,
+        border: Border.all(
+          color: theme.colorScheme.primary,
+          width: 1.h,
+        ),
+      );
+  static BoxDecoration get outlinePrimary11 => BoxDecoration(
+        border: Border.all(
+          color: theme.colorScheme.primary,
+          width: 3.h,
+        ),
+      );
+  static BoxDecoration get outlinePrimary12 => BoxDecoration(
         color: appTheme.gray10019,
         border: Border.all(
-          color: appTheme.amber600,
+          color: theme.colorScheme.primary,
           width: 2.h,
         ),
       );
-  static BoxDecoration get outlineAmber60011 => BoxDecoration(
-        color: appTheme.gray90002,
+  static BoxDecoration get outlinePrimary2 => BoxDecoration(
+        color: appTheme.indigo90002,
         border: Border.all(
-          color: appTheme.amber600,
-          width: 2.h,
-        ),
-      );
-  static BoxDecoration get outlineAmber6002 => BoxDecoration(
-        color: appTheme.indigo90003,
-        border: Border.all(
-          color: appTheme.amber600,
-          width: 2.h,
-        ),
-      );
-  static BoxDecoration get outlineAmber6003 => BoxDecoration(
-        color: appTheme.indigo90003,
-        border: Border.all(
-          color: appTheme.amber600,
+          color: theme.colorScheme.primary,
           width: 1.h,
         ),
       );
-  static BoxDecoration get outlineAmber6004 => BoxDecoration(
+  static BoxDecoration get outlinePrimary3 => BoxDecoration(
         color: appTheme.indigo900,
         border: Border.all(
-          color: appTheme.amber600,
+          color: theme.colorScheme.primary,
           width: 2.h,
         ),
       );
-  static BoxDecoration get outlineAmber6005 => BoxDecoration(
+  static BoxDecoration get outlinePrimary4 => BoxDecoration(
+        border: Border.all(
+          color: theme.colorScheme.primary,
+          width: 1.h,
+        ),
+      );
+  static BoxDecoration get outlinePrimary5 => BoxDecoration(
         color: appTheme.gray900,
         border: Border.all(
-          color: appTheme.amber600,
+          color: theme.colorScheme.primary,
           width: 1.h,
         ),
       );
-  static BoxDecoration get outlineAmber6006 => BoxDecoration(
-        color: appTheme.indigo90001,
+  static BoxDecoration get outlinePrimary6 => BoxDecoration(
+        color: theme.colorScheme.onErrorContainer,
         border: Border.all(
-          color: appTheme.amber600,
+          color: theme.colorScheme.primary,
           width: 1.h,
         ),
       );
-  static BoxDecoration get outlineAmber6007 => BoxDecoration(
+  static BoxDecoration get outlinePrimary7 => BoxDecoration(
         color: appTheme.indigo900,
         border: Border.all(
-          color: appTheme.amber600,
+          color: theme.colorScheme.primary,
           width: 3.h,
         ),
       );
-  static BoxDecoration get outlineAmber6008 => BoxDecoration(
-        color: appTheme.indigo900,
+  static BoxDecoration get outlinePrimary8 => BoxDecoration(
         border: Border.all(
-          color: appTheme.amber600,
+          color: theme.colorScheme.primary,
           width: 2.h,
         ),
       );
-  static BoxDecoration get outlineAmber6009 => BoxDecoration(
+  static BoxDecoration get outlinePrimary9 => BoxDecoration(
+        color: appTheme.indigo900.withOpacity(0.8),
         border: Border.all(
-          color: appTheme.amber600,
+          color: theme.colorScheme.primary,
           width: 3.h,
         ),
-      );
-  static BoxDecoration get outlineBlueGray => BoxDecoration(
-        border: Border.all(
-          color: appTheme.blueGray900,
-          width: 1.h,
-        ),
-      );
-  static BoxDecoration get outlineGray => BoxDecoration(
-        color: appTheme.whiteA700,
-        border: Border.all(
-          color: appTheme.gray90004,
-          width: 1.h,
-        ),
-      );
-  static BoxDecoration get outlineGray800 => BoxDecoration(
-        color: appTheme.blue800,
-        border: Border.all(
-          color: appTheme.gray800,
-          width: 1.h,
-        ),
-      );
-  static BoxDecoration get outlineWhiteA => BoxDecoration(
-        color: appTheme.amber600,
-        border: Border.all(
-          color: appTheme.whiteA700,
-          width: 1.h,
-        ),
-        boxShadow: [
-          BoxShadow(
-            color: appTheme.lime900E501,
-            spreadRadius: 2.h,
-            blurRadius: 2.h,
-            offset: Offset(
-              2,
-              2,
-            ),
-          ),
-        ],
       );
 }
 
@@ -178,17 +188,14 @@ class BorderRadiusStyle {
       );
 
   // Rounded borders
-  static BorderRadius get roundedBorder10 => BorderRadius.circular(
-        10.h,
-      );
   static BorderRadius get roundedBorder15 => BorderRadius.circular(
         15.h,
       );
   static BorderRadius get roundedBorder3 => BorderRadius.circular(
         3.h,
       );
-  static BorderRadius get roundedBorder7 => BorderRadius.circular(
-        7.h,
+  static BorderRadius get roundedBorder8 => BorderRadius.circular(
+        8.h,
       );
 }
 

@@ -40,7 +40,7 @@ class ComputerGameScreen extends GetWidget<ComputerGameController> {
                       SizedBox(height: 12.v),
                       Container(
                           margin: EdgeInsets.only(left: 16.h),
-                          decoration: AppDecoration.outlineAmber600,
+                          decoration: AppDecoration.outlinePrimary8,
                           child: Row(
                               mainAxisAlignment: MainAxisAlignment.end,
                               mainAxisSize: MainAxisSize.min,
@@ -86,15 +86,18 @@ class ComputerGameScreen extends GetWidget<ComputerGameController> {
                     Align(
                         alignment: Alignment.centerRight,
                         child: Text("lbl_player_1".tr,
-                            style: CustomTextStyles.labelLargeWhiteA700_1)),
+                            style:
+                                CustomTextStyles.labelLargeOnPrimaryContainer)),
                     SizedBox(height: 318.v),
                     Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text("lbl_player_2".tr,
-                              style: CustomTextStyles.labelLargeWhiteA700_1),
+                              style: CustomTextStyles
+                                  .labelLargeOnPrimaryContainer),
                           Text("lbl_player_4".tr,
-                              style: CustomTextStyles.labelLargeWhiteA700_1)
+                              style:
+                                  CustomTextStyles.labelLargeOnPrimaryContainer)
                         ])
                   ])))
         ]));
