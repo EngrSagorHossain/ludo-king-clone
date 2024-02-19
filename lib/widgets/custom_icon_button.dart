@@ -53,7 +53,7 @@ class CustomIconButton extends StatelessWidget {
                   color: appTheme.indigo900,
                   borderRadius: BorderRadius.circular(7.h),
                   border: Border.all(
-                    color: appTheme.amber600,
+                    color: theme.colorScheme.primary,
                     width: 2.h,
                   ),
                 ),
@@ -66,10 +66,10 @@ class CustomIconButton extends StatelessWidget {
 
 /// Extension on [CustomIconButton] to facilitate inclusion of all types of border style etc
 extension IconButtonStyleHelper on CustomIconButton {
-  static BoxDecoration get outlineAmber => BoxDecoration(
+  static BoxDecoration get outlinePrimaryTL7 => BoxDecoration(
         borderRadius: BorderRadius.circular(7.h),
         border: Border.all(
-          color: appTheme.amber600,
+          color: theme.colorScheme.primary,
           width: 2.h,
         ),
       );
@@ -81,6 +81,18 @@ extension IconButtonStyleHelper on CustomIconButton {
             appTheme.yellowA100,
             appTheme.pinkA100,
           ],
+        ),
+      );
+  static BoxDecoration get fillGray => BoxDecoration(
+        color: appTheme.gray10019,
+        borderRadius: BorderRadius.circular(35.h),
+      );
+  static BoxDecoration get outlinePrimaryTL8 => BoxDecoration(
+        color: theme.colorScheme.onPrimary,
+        borderRadius: BorderRadius.circular(8.h),
+        border: Border.all(
+          color: theme.colorScheme.primary,
+          width: 2.h,
         ),
       );
 }

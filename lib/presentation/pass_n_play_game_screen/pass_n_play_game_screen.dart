@@ -1,7 +1,7 @@
 import 'controller/pass_n_play_game_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:ludo_king_clone/core/app_export.dart';
-import 'package:ludo_king_clone/widgets/app_bar/appbar_leading_iconbutton.dart';
+import 'package:ludo_king_clone/widgets/app_bar/appbar_leading_iconbutton_two.dart';
 import 'package:ludo_king_clone/widgets/app_bar/custom_app_bar.dart';
 import 'package:ludo_king_clone/widgets/custom_icon_button.dart';
 import 'package:ludo_king_clone/widgets/custom_switch.dart';
@@ -13,7 +13,7 @@ class PassNPlayGameScreen extends GetWidget<PassNPlayGameController> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-            appBar: _buildView(),
+            appBar: _buildAppBar(),
             body: Container(
                 height: 732.v,
                 width: double.maxFinite,
@@ -28,12 +28,12 @@ class PassNPlayGameScreen extends GetWidget<PassNPlayGameController> {
                               children: [
                                 _buildPlayerCounter(),
                                 SizedBox(height: 12.v),
-                                _buildMapsAndFlags()
+                                _buildMapsAndFlagsOne2()
                               ]))),
                   Padding(
                       padding: EdgeInsets.only(
                           left: 244.h, right: 24.h, bottom: 538.v),
-                      child: _buildImageRow(
+                      child: _buildMapsAndFlagsOne(
                           mapsAndFlagsImage: ImageConstant.imgMapsAndFlags1)),
                   Obx(() => CustomSwitch(
                       margin: EdgeInsets.only(left: 27.h),
@@ -66,8 +66,8 @@ class PassNPlayGameScreen extends GetWidget<PassNPlayGameController> {
                                             ])))),
                                 SizedBox(height: 19.v),
                                 Text("lbl_player_3".tr,
-                                    style:
-                                        CustomTextStyles.labelLargeWhiteA700_1)
+                                    style: CustomTextStyles
+                                        .labelLargeOnPrimaryContainer)
                               ]))),
                   CustomImageView(
                       imagePath: ImageConstant.imgMapsAndFlags140x40,
@@ -79,10 +79,10 @@ class PassNPlayGameScreen extends GetWidget<PassNPlayGameController> {
   }
 
   /// Section Widget
-  PreferredSizeWidget _buildView() {
+  PreferredSizeWidget _buildAppBar() {
     return CustomAppBar(
         leadingWidth: double.maxFinite,
-        leading: AppbarLeadingIconbutton(
+        leading: AppbarLeadingIconbuttonTwo(
             imagePath: ImageConstant.imgLeftArrow11,
             margin: EdgeInsets.fromLTRB(21.h, 13.v, 309.h, 13.v),
             onTap: () {
@@ -109,29 +109,32 @@ class PassNPlayGameScreen extends GetWidget<PassNPlayGameController> {
                     Align(
                         alignment: Alignment.centerRight,
                         child: Text("lbl_player_1".tr,
-                            style: CustomTextStyles.labelLargeWhiteA700_1)),
+                            style:
+                                CustomTextStyles.labelLargeOnPrimaryContainer)),
                     SizedBox(height: 318.v),
                     Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text("lbl_player_2".tr,
-                              style: CustomTextStyles.labelLargeWhiteA700_1),
+                              style: CustomTextStyles
+                                  .labelLargeOnPrimaryContainer),
                           Text("lbl_player_4".tr,
-                              style: CustomTextStyles.labelLargeWhiteA700_1)
+                              style:
+                                  CustomTextStyles.labelLargeOnPrimaryContainer)
                         ])
                   ])))
         ]));
   }
 
   /// Section Widget
-  Widget _buildMapsAndFlags() {
+  Widget _buildMapsAndFlagsOne2() {
     return Padding(
         padding: EdgeInsets.symmetric(horizontal: 15.h),
         child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           Container(
               width: 92.h,
-              decoration: AppDecoration.outlineAmber6004,
+              decoration: AppDecoration.outlinePrimary3,
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -149,14 +152,15 @@ class PassNPlayGameScreen extends GetWidget<PassNPlayGameController> {
                         child:
                             CustomImageView(imagePath: ImageConstant.imgGroup5))
                   ])),
-          _buildImageRow(mapsAndFlagsImage: ImageConstant.imgMapsAndFlags3)
+          _buildMapsAndFlagsOne(
+              mapsAndFlagsImage: ImageConstant.imgMapsAndFlags3)
         ]));
   }
 
   /// Common widget
-  Widget _buildImageRow({required String mapsAndFlagsImage}) {
+  Widget _buildMapsAndFlagsOne({required String mapsAndFlagsImage}) {
     return Container(
-        decoration: AppDecoration.outlineAmber600,
+        decoration: AppDecoration.outlinePrimary8,
         child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
           CustomImageView(
               imagePath: mapsAndFlagsImage,

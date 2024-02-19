@@ -53,7 +53,7 @@ class ComputerTwoScreen extends GetWidget<ComputerTwoController> {
   Widget _buildAndroidLarge() {
     return Container(
         padding: EdgeInsets.symmetric(horizontal: 22.h, vertical: 10.v),
-        decoration: AppDecoration.outlineAmber6001,
+        decoration: AppDecoration.outlinePrimary,
         child: Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -137,7 +137,7 @@ class ComputerTwoScreen extends GetWidget<ComputerTwoController> {
     return Container(
         width: 290.h,
         padding: EdgeInsets.symmetric(horizontal: 64.h, vertical: 10.v),
-        decoration: AppDecoration.outlineAmber6001,
+        decoration: AppDecoration.outlinePrimary,
         child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.end,

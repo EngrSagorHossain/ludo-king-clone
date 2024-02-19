@@ -51,7 +51,7 @@ class PassNPlayFiveScreen extends GetWidget<PassNPlayFiveController> {
     return Container(
         width: 290.h,
         padding: EdgeInsets.symmetric(horizontal: 43.h, vertical: 7.v),
-        decoration: AppDecoration.outlineAmber6001,
+        decoration: AppDecoration.outlinePrimary,
         child: Column(mainAxisSize: MainAxisSize.min, children: [
           Align(
               alignment: Alignment.centerLeft,
@@ -59,12 +59,12 @@ class PassNPlayFiveScreen extends GetWidget<PassNPlayFiveController> {
                   style: CustomTextStyles.titleSmallYellow700_1)),
           SizedBox(height: 29.v),
           _buildMapsAndFlagsOneRow(
-              imageProps: ImageConstant.imgMapsAndFlags2,
-              textProps: "lbl_player_1".tr),
+              image: ImageConstant.imgMapsAndFlags2,
+              playerCounter: "lbl_player_1".tr),
           SizedBox(height: 10.v),
           _buildMapsAndFlagsOneRow(
-              imageProps: ImageConstant.imgMapsAndFlags1,
-              textProps: "lbl_player_3".tr),
+              image: ImageConstant.imgMapsAndFlags1,
+              playerCounter: "lbl_player_3".tr),
           SizedBox(height: 9.v),
           Align(
               alignment: Alignment.centerRight,
@@ -72,10 +72,10 @@ class PassNPlayFiveScreen extends GetWidget<PassNPlayFiveController> {
                   width: 30.adaptSize,
                   margin: EdgeInsets.only(right: 68.h),
                   padding: EdgeInsets.all(6.h),
-                  decoration: AppDecoration.outlineAmber60011.copyWith(
+                  decoration: AppDecoration.outlinePrimary3.copyWith(
                       borderRadius: BorderRadiusStyle.roundedBorder15),
                   child: Text("lbl_vs".tr,
-                      style: CustomTextStyles.labelLargeWhiteA70013))),
+                      style: CustomTextStyles.labelLargeOnPrimaryContainer13))),
           SizedBox(height: 7.v),
           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
             CustomImageView(
@@ -93,14 +93,14 @@ class PassNPlayFiveScreen extends GetWidget<PassNPlayFiveController> {
                           height: 19.v,
                           width: 87.h,
                           decoration: BoxDecoration(
-                              color: appTheme.whiteA700,
+                              color: theme.colorScheme.onPrimaryContainer,
                               borderRadius: BorderRadius.circular(5.h)))),
                   Align(
                       alignment: Alignment.bottomLeft,
                       child: Padding(
                           padding: EdgeInsets.only(left: 9.h),
                           child: Text("lbl_player_2".tr,
-                              style: theme.textTheme.bodySmall)))
+                              style: CustomTextStyles.bodySmallBlack900)))
                 ]))
           ]),
           SizedBox(height: 8.v),
@@ -113,10 +113,10 @@ class PassNPlayFiveScreen extends GetWidget<PassNPlayFiveController> {
                 width: 87.h,
                 margin: EdgeInsets.only(left: 12.h),
                 padding: EdgeInsets.symmetric(horizontal: 9.h, vertical: 1.v),
-                decoration: AppDecoration.fillWhiteA
-                    .copyWith(borderRadius: BorderRadiusStyle.roundedBorder7),
-                child:
-                    Text("lbl_player_4".tr, style: theme.textTheme.bodySmall))
+                decoration: AppDecoration.fillOnPrimaryContainer
+                    .copyWith(borderRadius: BorderRadiusStyle.roundedBorder3),
+                child: Text("lbl_player_4".tr,
+                    style: CustomTextStyles.bodySmallBlack900))
           ]),
           SizedBox(height: 41.v)
         ]));
@@ -124,12 +124,12 @@ class PassNPlayFiveScreen extends GetWidget<PassNPlayFiveController> {
 
   /// Common widget
   Widget _buildMapsAndFlagsOneRow({
-    required String imageProps,
-    required String textProps,
+    required String image,
+    required String playerCounter,
   }) {
     return Row(mainAxisAlignment: MainAxisAlignment.center, children: [
       CustomImageView(
-          imagePath: imageProps,
+          imagePath: image,
           height: 20.adaptSize,
           width: 20.adaptSize,
           margin: EdgeInsets.only(top: 1.v)),
@@ -137,10 +137,10 @@ class PassNPlayFiveScreen extends GetWidget<PassNPlayFiveController> {
           width: 87.h,
           margin: EdgeInsets.only(left: 14.h),
           padding: EdgeInsets.symmetric(horizontal: 9.h, vertical: 1.v),
-          decoration: AppDecoration.fillWhiteA
-              .copyWith(borderRadius: BorderRadiusStyle.roundedBorder7),
-          child: Text(textProps,
-              style: theme.textTheme.bodySmall!
+          decoration: AppDecoration.fillOnPrimaryContainer
+              .copyWith(borderRadius: BorderRadiusStyle.roundedBorder3),
+          child: Text(playerCounter,
+              style: CustomTextStyles.bodySmallBlack900
                   .copyWith(color: appTheme.black900)))
     ]);
   }

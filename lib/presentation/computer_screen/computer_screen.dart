@@ -46,7 +46,7 @@ class ComputerScreen extends GetWidget<ComputerController> {
                           ]))),
                   Spacer(flex: 62),
                   Text("lbl_v8_0_0_263".tr,
-                      style: CustomTextStyles.bodySmallWhiteA700)
+                      style: CustomTextStyles.bodySmallOnPrimaryContainer10)
                 ]))));
   }
 
@@ -55,7 +55,7 @@ class ComputerScreen extends GetWidget<ComputerController> {
     return Container(
         margin: EdgeInsets.only(left: 2.h),
         padding: EdgeInsets.symmetric(horizontal: 80.h, vertical: 10.v),
-        decoration: AppDecoration.outlineAmber6001,
+        decoration: AppDecoration.outlinePrimary,
         child: Column(mainAxisSize: MainAxisSize.min, children: [
           Text("lbl_select_game".tr, style: theme.textTheme.titleMedium),
           SizedBox(height: 23.v),
@@ -69,7 +69,7 @@ class ComputerScreen extends GetWidget<ComputerController> {
                         margin: EdgeInsets.only(left: 3.h),
                         padding: EdgeInsets.symmetric(
                             horizontal: 20.h, vertical: 2.v),
-                        decoration: AppDecoration.outlineAmber600.copyWith(
+                        decoration: AppDecoration.outlinePrimary8.copyWith(
                             borderRadius: BorderRadiusStyle.customBorderTL15),
                         child: Column(
                             mainAxisSize: MainAxisSize.min,
@@ -89,7 +89,7 @@ class ComputerScreen extends GetWidget<ComputerController> {
           SizedBox(height: 15.v),
           Container(
               margin: EdgeInsets.symmetric(horizontal: 3.h),
-              decoration: AppDecoration.outlineAmber600
+              decoration: AppDecoration.outlinePrimary8
                   .copyWith(borderRadius: BorderRadiusStyle.customBorderTL15),
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
